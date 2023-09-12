@@ -1,1 +1,11 @@
-<!DOCTYPE html>
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: chocolate;
+}
+
+p {
+    color: black;
+}
