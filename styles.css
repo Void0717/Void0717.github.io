@@ -6,4 +6,22 @@ h1 {
 
 p {
     color: black;
+    font-family: 'Lucida Sans';
+    font-size: medium;
+}
+
+table {
+    color: blue;
+}
+
+th {
+    color: crimson;
+    font-family: 'Lucida Sans';
+    font-size: large;
+}
+
+td {
+    color: crimson;
+    font-family: 'Lucida Sans';
+    font-size: medium;
 }
