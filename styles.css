@@ -57,3 +57,7 @@ table, th, td {
 .button:hover {
     background-color: #23527c;
       }
+nav ul {
+    position: absolute;
+    right: 0;
+    }
