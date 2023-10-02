@@ -5,44 +5,52 @@ h1 {
     color: rgb(255, 0, 0);
     font-family: 'Lucida Sans';
     font-size: larger
+    text-align: center;
 }
 
 h2 {
     color: rgb(255, 0, 0);
     font-family: 'Lucida Sans';
     font-size: large
+    text-align: center;
 }
 
 h3 {
     color: rgb(255, 0, 0);
     font-family: 'Lucida Sans';
     font-size: medium
+    text-align: center;
 }
 
 p {
     color: black;
     font-family: 'Lucida Sans';
     font-size: medium;
+    text-align: center;
 }
 
 table {
     color: blue;
+    text-align: center;
 }
 
 th {
     color: crimson;
     font-family: 'Lucida Sans';
     font-size: large;
+    text-align: center;
 }
 
 td {
     color: crimson;
     font-family: 'Lucida Sans';
     font-size: medium;
+    text-align: center;
 }
 
 table, th, td {
     border: 1px solid;
+    text-align: center;
 }
 
 .button {
@@ -53,11 +61,14 @@ table, th, td {
     text-decoration: none;
     border-radius: 4px;
     font-family: 'Lucida Sans';
+    text-align: center;
       }
 .button:hover {
     background-color: #23527c;
+    text-align: center;
       }
 nav ul {
     position: absolute;
     right: 0;
+    text-align: center;
     }
