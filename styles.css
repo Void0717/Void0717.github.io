@@ -5,21 +5,19 @@ h1 {
     color: rgb(255, 0, 0);
     font-family: 'Lucida Sans';
     font-size: larger
-    text-align: center;
+    
 }
 
 h2 {
     color: rgb(255, 0, 0);
     font-family: 'Lucida Sans';
     font-size: large
-    text-align: center;
 }
 
 h3 {
     color: rgb(255, 0, 0);
     font-family: 'Lucida Sans';
     font-size: medium
-    text-align: center;
 }
 
 p {
