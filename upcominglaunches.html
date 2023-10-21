@@ -11,13 +11,13 @@
             <a href="previouslaunches" class="button">Previous Launches</a>
             <a href="Projects" class="button">Back To Main</a>
             <h1>Rocket Launch Navigator | Upcoming Launches</h1>
-            <h2>The next 100 launches</h2>
+            <h2>The next 300 launches</h2>
         </header>
         <div class="launch-container">
           <div class="launch-container">
             <script>
               let renderedLaunches = 0;
-              const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=5`;
+              const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=300`;
 
               async function fetchRocketLaunches() {
                 try {
