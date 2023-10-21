@@ -14,9 +14,11 @@
             <h2>The next 100 launches</h2>
         </header>
         <div class="launch-container">
+          <div class="launch-container">
             <script>
-              let renderedLaunches = 0;$
-              const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=6`;
+              let renderedLaunches = 0;
+              const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=5`;
+
               async function fetchRocketLaunches() {
                 try {
                   const response = await fetch(apiUrl);
@@ -26,14 +28,14 @@
                   const data = await response.json();
                   if (data && data.results) {
                     const launches = data.results.filter((launch) => launch.status.id !== 3 && launch.status.id !== 4);
-        
+
                     launches.forEach((launch) => {
                       const { name, net, pad, rocket, webcast_live, status, net_precision, image } = launch;
                       const launchItem = document.createElement('div');
                       launchItem.classList.add('launch-item');
                       const launchImage = new Image();
                       launchImage.src = image; // Replace with actual image URL
-                      launchImage.alt = 'No Image Provided';
+                      launchImage.alt = 'altimage.png';
                       launchImage.classList.add('launch-image');
                       const launchBox = document.createElement('div');
                       launchBox.classList.add('launch-box');
@@ -47,11 +49,11 @@
                         <p>Pad Location: ${pad.location.name}</p>
                         <p>Webcast Live: ${webcast_live}</p>
                       `;
-        
+
                       launchItem.appendChild(launchImage);
                       launchItem.appendChild(launchBox);
                       document.querySelector('.launch-container').appendChild(launchItem);
-        
+
                       renderedLaunches++;
                       if (renderedLaunches >= 60) {
                         return;
@@ -68,7 +70,7 @@
                   document.body.appendChild(errorText);
                 }
               }
-        
+
               fetchRocketLaunches();
             </script>
           </div>
